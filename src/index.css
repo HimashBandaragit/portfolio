@@ -1,0 +1,27 @@
+@import url('https://fonts.cdnfonts.com/css/electroharmonix');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Press+Start+2P&display=swap');
+
+                
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", system-ui;                                         
+}
+
+body{
+  background: #ffffff;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container{
+  padding-left: 10%;
+  padding-right: 10%; 
+}

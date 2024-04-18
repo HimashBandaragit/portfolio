@@ -1,0 +1,22 @@
+.skills {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: space-between;
+}
+
+.skill {
+    flex-basis: calc(40% - 10px); /* Adjusted width for each skill with some margin between them */
+    margin-bottom: 20px; /* Add some margin between each skill */
+}
+
+.skill:nth-child(3) {
+    flex-basis: calc(40% - 10px); /* Adjust the width to be the same as the other skills */
+    margin: 40px auto; /* Center the third skill horizontally */
+}
+
+.skill img {
+    width: 100%;
+    display: block;
+}

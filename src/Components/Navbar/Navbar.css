@@ -1,0 +1,51 @@
+nav {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.8s ease; /* Add transition for smooth effect */
+  }
+  
+  nav.scrolling {
+    background-color: black; /* Apply black background when scrolling */
+    color: white;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 40px;
+    font-size: 15px;
+  }
+  
+  /*glitch effect*/
+
+  /* Add glitch effect */
+nav ul li:hover {
+  position: relative;
+  animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-5px, 5px);
+  }
+  50% {
+    transform: translate(5px, -5px);
+  }
+  75% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(5px, -5px);
+  }
+}

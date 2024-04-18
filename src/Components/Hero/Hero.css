@@ -1,0 +1,86 @@
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-text {
+    margin-top: -150px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero-text h2 {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 10px auto 1px;
+    line-height: 3.0;
+}
+
+.hero-text h3 {
+    margin: 20px auto;
+    align-items: center;
+}
+
+.icons {
+    position: absolute;
+    left: -10px; /* Adjust this value to move the icons closer or farther from the edge */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: flex-start; /* Align icons to the start of the container */
+    background-color: rgb(51, 233, 202);
+    border-radius: 10px;
+}
+
+.icons img {
+    width: 40px; /* Adjust the size of the icons */
+    margin-bottom: 30px; /* Add space between icons */
+    transition: transform 0.3s ease;
+    margin: 20px;
+}
+
+.icons img:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+.icons ul {
+    list-style-type: none; /* Remove the bullet points or dots */
+  }
+  
+/* Add typewriter effect animation */
+.typewriter {
+    overflow: hidden; /* Ensures the text is not revealed until the animation */
+    border-right: .05em solid rgb(28, 209, 200); /* Adjusted thickness of the cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .75s step-end infinite;
+    color: rgb(17, 88, 201);
+    align-items: center;
+}
+
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    60% { border-color: rgb(0, 0, 0); }
+  }
+  
